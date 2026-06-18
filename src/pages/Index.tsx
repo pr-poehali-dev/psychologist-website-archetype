@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/933a7f48-4517-484e-b579-48cc6dc2c64d/bucket/82e6b63c-eb02-4c67-8b21-6398f50c25af.jpg';
+const HERO_IMG = 'https://cdn.poehali.dev/projects/933a7f48-4517-484e-b579-48cc6dc2c64d/bucket/a5aa463d-7354-4980-997f-a3fb6c68be10.jpeg';
 
 const CERTS = [
   { title: 'Сертификат 1', src: HERO_IMG },
