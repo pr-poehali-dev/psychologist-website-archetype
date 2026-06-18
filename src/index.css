@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    --background: 250 40% 6%;
-    --foreground: 40 30% 92%;
+    --background: 24 28% 7%;
+    --foreground: 38 35% 92%;
 
-    --card: 250 35% 9%;
-    --card-foreground: 40 30% 92%;
+    --card: 22 25% 10%;
+    --card-foreground: 38 35% 92%;
 
-    --popover: 250 40% 7%;
-    --popover-foreground: 40 30% 92%;
+    --popover: 22 25% 10%;
+    --popover-foreground: 38 35% 92%;
 
-    --primary: 42 75% 60%;
-    --primary-foreground: 250 50% 8%;
+    --primary: 34 80% 55%;
+    --primary-foreground: 22 30% 8%;
 
-    --secondary: 255 40% 16%;
-    --secondary-foreground: 40 30% 92%;
+    --secondary: 20 22% 16%;
+    --secondary-foreground: 38 35% 92%;
 
-    --muted: 252 25% 14%;
-    --muted-foreground: 250 12% 62%;
+    --muted: 20 18% 14%;
+    --muted-foreground: 28 14% 58%;
 
-    --accent: 268 55% 30%;
-    --accent-foreground: 40 40% 95%;
+    --accent: 18 50% 28%;
+    --accent-foreground: 38 40% 95%;
 
     --destructive: 0 70% 45%;
-    --destructive-foreground: 40 30% 92%;
+    --destructive-foreground: 38 35% 92%;
 
-    --border: 255 30% 18%;
-    --input: 255 30% 18%;
-    --ring: 42 75% 60%;
+    --border: 22 20% 18%;
+    --input: 22 20% 18%;
+    --ring: 34 80% 55%;
 
     --radius: 0.75rem;
 
-    --gold: 42 75% 60%;
-    --indigo: 255 60% 50%;
-    --mystic: 280 60% 45%;
+    --gold: 34 80% 55%;
+    --indigo: 20 50% 35%;
+    --mystic: 18 45% 30%;
 
-    --sidebar-background: 250 40% 6%;
-    --sidebar-foreground: 40 30% 92%;
-    --sidebar-primary: 42 75% 60%;
-    --sidebar-primary-foreground: 250 50% 8%;
-    --sidebar-accent: 255 40% 16%;
-    --sidebar-accent-foreground: 40 30% 92%;
-    --sidebar-border: 255 30% 18%;
-    --sidebar-ring: 42 75% 60%;
+    --sidebar-background: 24 28% 7%;
+    --sidebar-foreground: 38 35% 92%;
+    --sidebar-primary: 34 80% 55%;
+    --sidebar-primary-foreground: 22 30% 8%;
+    --sidebar-accent: 20 22% 16%;
+    --sidebar-accent-foreground: 38 35% 92%;
+    --sidebar-border: 22 20% 18%;
+    --sidebar-ring: 34 80% 55%;
   }
 }
 
@@ -77,17 +77,17 @@
     background:
       radial-gradient(
         ellipse 80% 50% at 50% -10%,
-        hsl(268 60% 25% / 0.6),
+        hsl(30 60% 22% / 0.7),
         transparent
       ),
       radial-gradient(
-        ellipse 60% 50% at 80% 50%,
-        hsl(255 60% 30% / 0.35),
+        ellipse 60% 50% at 85% 40%,
+        hsl(20 55% 25% / 0.4),
         transparent
       ),
       radial-gradient(
-        ellipse 60% 50% at 10% 90%,
-        hsl(280 55% 28% / 0.35),
+        ellipse 60% 50% at 10% 85%,
+        hsl(36 50% 20% / 0.35),
         transparent
       ),
       hsl(var(--background));
