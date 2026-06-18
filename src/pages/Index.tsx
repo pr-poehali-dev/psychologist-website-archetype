@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/933a7f48-4517-484e-b579-48cc6dc2c64d/files/65472727-4409-4be2-a0ea-36eff714b1f3.jpg';
+const HERO_IMG = 'https://cdn.poehali.dev/projects/933a7f48-4517-484e-b579-48cc6dc2c64d/bucket/f62a9aea-bb96-420e-b98c-9c5e73d4e021.jpg';
 
 const archetypes = [
   {
