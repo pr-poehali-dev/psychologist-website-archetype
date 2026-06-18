@@ -124,7 +124,7 @@ export default function Index() {
           {/* Текст справа */}
           <div className="reveal order-2" style={{ animationDelay: '0.25s' }}>
             <span className="inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-gold mb-6">
-              <span className="w-8 h-px bg-gold" /> Тело · Разум · Душа
+              Тело · Разум · Душа
             </span>
             <h1 className="font-display text-5xl md:text-6xl leading-[1.05] mb-5">
               Путь к себе <br />
