@@ -2,27 +2,19 @@ import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/933a7f48-4517-484e-b579-48cc6dc2c64d/bucket/4d49b971-e585-4598-85ef-53693bb9eea0.jpeg';
+const HERO_IMG = 'https://cdn.poehali.dev/projects/933a7f48-4517-484e-b579-48cc6dc2c64d/bucket/82e6b63c-eb02-4c67-8b21-6398f50c25af.jpg';
+
+const CERTS = [
+  { title: 'Сертификат 1', src: HERO_IMG },
+  { title: 'Сертификат 2', src: HERO_IMG },
+  { title: 'Сертификат 3', src: HERO_IMG },
+  { title: 'Сертификат 4', src: HERO_IMG },
+];
 
 const archetypes = [
-  {
-    icon: 'Sparkles',
-    name: 'Маг',
-    word: 'Трансформация',
-    text: 'Превращаем боль в ресурс. Меняем внутреннюю реальность, чтобы изменилась внешняя.',
-  },
-  {
-    icon: 'BookOpen',
-    name: 'Мудрец',
-    word: 'Осознанность',
-    text: 'Ищем истину под слоями привычек и страхов. Понимание как ключ к свободе.',
-  },
-  {
-    icon: 'Compass',
-    name: 'Искатель',
-    word: 'Путь',
-    text: 'Сопровождаю вас в путешествии к подлинному «я» — за пределы навязанных ролей.',
-  },
+  { icon: 'Sparkles', name: 'Маг', word: 'Трансформация', text: 'Превращаем боль в ресурс. Меняем внутреннюю реальность, чтобы изменилась внешняя.' },
+  { icon: 'BookOpen', name: 'Мудрец', word: 'Осознанность', text: 'Ищем истину под слоями привычек и страхов. Понимание как ключ к свободе.' },
+  { icon: 'Compass', name: 'Искатель', word: 'Путь', text: 'Сопровождаю вас в путешествии к подлинному «я» — за пределы навязанных ролей.' },
 ];
 
 const services = [
@@ -46,7 +38,7 @@ const posts = [
 ];
 
 const reviews = [
-  { name: 'Анна К.', text: 'Мария помогла мне найти то, что я искала годами. Это не терапия — это возвращение к себе.', role: 'Год в терапии' },
+  { name: 'Анна К.', text: 'Анна помогла мне найти то, что я искала годами. Это не терапия — это возвращение к себе.', role: 'Год в терапии' },
   { name: 'Дмитрий В.', text: 'Глубоко, бережно и при этом честно. Впервые перестал бояться смотреть внутрь себя.', role: '6 месяцев' },
   { name: 'Елена С.', text: 'Работа с архетипами раскрыла меня с неожиданной стороны. Чувствую себя цельной.', role: '8 месяцев' },
 ];
@@ -62,6 +54,7 @@ const navLinks = [
 
 export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [certOpen, setCertOpen] = useState<number | null>(null);
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -73,9 +66,9 @@ export default function Index() {
       {/* NAV */}
       <header className="fixed top-0 inset-x-0 z-50 glass">
         <div className="container flex items-center justify-between h-[68px]">
-          <button onClick={() => scrollTo('hero')} className="flex items-center gap-2 group">
+          <button onClick={() => scrollTo('hero')} className="flex items-center gap-2">
             <Icon name="Sparkle" className="text-gold animate-spin-slow" size={22} />
-            <span className="font-display text-xl tracking-wide">Мария Светлова</span>
+            <span className="font-display text-xl tracking-wide">Анна Костюрина</span>
           </button>
           <nav className="hidden md:flex items-center gap-7">
             {navLinks.map((l) => (
@@ -94,7 +87,7 @@ export default function Index() {
           </div>
         </div>
         {menuOpen && (
-          <nav className="md:hidden glass border-t border-border px-6 py-4 flex flex-col gap-4 animate-fade-in">
+          <nav className="md:hidden glass border-t border-border px-6 py-4 flex flex-col gap-4">
             {navLinks.map((l) => (
               <button key={l.id} onClick={() => scrollTo(l.id)} className="text-left text-muted-foreground hover:text-gold">
                 {l.label}
@@ -128,9 +121,21 @@ export default function Index() {
             </div>
           </div>
           <div className="relative reveal" style={{ animationDelay: '0.3s' }}>
-            <div className="absolute -inset-4 rounded-[2.5rem] bg-secondary/30 blur-2xl" />
+            <div className="absolute -inset-4 rounded-[2.5rem] bg-primary/10 blur-3xl" />
             <div className="relative">
-              <img src={HERO_IMG} alt="Мария Светлова" className="relative rounded-[2rem] w-full object-cover aspect-[4/5] border border-gold/20" />
+              <img
+                src={HERO_IMG}
+                alt="Анна Костюрина"
+                className="relative rounded-[2rem] w-full object-cover object-top aspect-[4/5] border border-gold/25"
+                style={{ objectPosition: 'center top' }}
+              />
+              <div className="absolute bottom-4 left-4 right-4 glass rounded-xl px-5 py-3 flex items-center justify-between">
+                <div>
+                  <div className="font-display text-xl">Анна Костюрина</div>
+                  <div className="text-xs text-muted-foreground">Психолог · Архетипный подход</div>
+                </div>
+                <Icon name="Award" className="text-gold" size={24} />
+              </div>
             </div>
           </div>
         </div>
@@ -176,7 +181,54 @@ export default function Index() {
             ))}
           </div>
         </div>
+
+        {/* CERTIFICATES */}
+        <div className="mt-14 reveal">
+          <div className="flex items-center gap-3 mb-8">
+            <Icon name="Award" className="text-gold" size={24} />
+            <h3 className="font-display text-3xl">Сертификаты и дипломы</h3>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {CERTS.map((c, i) => (
+              <button
+                key={i}
+                onClick={() => setCertOpen(i)}
+                className="glass rounded-2xl overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:border-gold/40 text-left"
+              >
+                <div className="aspect-[3/4] overflow-hidden bg-secondary/50 relative">
+                  <img src={c.src} alt={c.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-60" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="glass rounded-xl px-3 py-2 flex items-center gap-2">
+                      <Icon name="ZoomIn" className="text-gold" size={16} />
+                      <span className="text-xs text-gold">Открыть</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-3">
+                  <p className="text-sm text-muted-foreground">{c.title}</p>
+                </div>
+              </button>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-2">
+            <Icon name="Info" size={14} />
+            Загрузите реальные фото сертификатов — напишите мне, и я обновлю галерею
+          </p>
+        </div>
       </section>
+
+      {/* LIGHTBOX */}
+      {certOpen !== null && (
+        <div className="fixed inset-0 z-[100] bg-background/90 backdrop-blur-lg flex items-center justify-center p-4" onClick={() => setCertOpen(null)}>
+          <div className="relative max-w-2xl w-full" onClick={(e) => e.stopPropagation()}>
+            <button onClick={() => setCertOpen(null)} className="absolute -top-4 -right-4 w-10 h-10 glass rounded-full flex items-center justify-center text-gold z-10">
+              <Icon name="X" size={20} />
+            </button>
+            <img src={CERTS[certOpen].src} alt={CERTS[certOpen].title} className="rounded-2xl w-full border border-gold/20" />
+            <p className="text-center text-sm text-muted-foreground mt-4">{CERTS[certOpen].title}</p>
+          </div>
+        </div>
+      )}
 
       {/* SERVICES */}
       <section id="services" className="container py-20 md:py-28">
@@ -247,9 +299,6 @@ export default function Index() {
             <p className="text-gold text-sm tracking-[0.3em] uppercase mb-3">Блог</p>
             <h2 className="font-display text-4xl md:text-5xl">Размышления о пути</h2>
           </div>
-          <button onClick={() => scrollTo('blog')} className="hidden md:flex items-center gap-2 text-gold hover:gap-3 transition-all text-sm">
-            Все статьи <Icon name="ArrowRight" size={16} />
-          </button>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {posts.map((p, i) => (
@@ -302,9 +351,9 @@ export default function Index() {
             </p>
             <div className="space-y-4">
               {[
-                { icon: 'Mail', text: 'hello@svetlova.ru' },
+                { icon: 'Mail', text: 'hello@kostyurina.ru' },
                 { icon: 'Phone', text: '+7 (900) 123-45-67' },
-                { icon: 'Send', text: '@svetlova_psy' },
+                { icon: 'Send', text: '@kostyurina_psy' },
               ].map((c) => (
                 <div key={c.text} className="flex items-center gap-3 text-muted-foreground">
                   <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
@@ -331,7 +380,7 @@ export default function Index() {
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
             <Icon name="Sparkle" className="text-gold" size={18} />
-            <span className="font-display text-lg">Мария Светлова</span>
+            <span className="font-display text-lg">Анна Костюрина</span>
           </div>
           <p>© 2026 · Психолог · Маг · Мудрец · Искатель</p>
         </div>

@@ -4,48 +4,48 @@
 
 @layer base {
   :root {
-    --background: 24 28% 7%;
-    --foreground: 38 35% 92%;
+    --background: 270 25% 6%;
+    --foreground: 38 30% 92%;
 
-    --card: 22 25% 10%;
-    --card-foreground: 38 35% 92%;
+    --card: 268 20% 9%;
+    --card-foreground: 38 30% 92%;
 
-    --popover: 22 25% 10%;
-    --popover-foreground: 38 35% 92%;
+    --popover: 268 20% 9%;
+    --popover-foreground: 38 30% 92%;
 
-    --primary: 34 80% 55%;
-    --primary-foreground: 22 30% 8%;
+    --primary: 38 78% 56%;
+    --primary-foreground: 270 30% 8%;
 
-    --secondary: 20 22% 16%;
-    --secondary-foreground: 38 35% 92%;
+    --secondary: 268 22% 15%;
+    --secondary-foreground: 38 30% 92%;
 
-    --muted: 20 18% 14%;
-    --muted-foreground: 28 14% 58%;
+    --muted: 268 18% 13%;
+    --muted-foreground: 268 10% 58%;
 
-    --accent: 18 50% 28%;
+    --accent: 310 35% 25%;
     --accent-foreground: 38 40% 95%;
 
     --destructive: 0 70% 45%;
-    --destructive-foreground: 38 35% 92%;
+    --destructive-foreground: 38 30% 92%;
 
-    --border: 22 20% 18%;
-    --input: 22 20% 18%;
-    --ring: 34 80% 55%;
+    --border: 268 18% 17%;
+    --input: 268 18% 17%;
+    --ring: 38 78% 56%;
 
     --radius: 0.75rem;
 
-    --gold: 34 80% 55%;
-    --indigo: 20 50% 35%;
-    --mystic: 18 45% 30%;
+    --gold: 38 78% 56%;
+    --indigo: 310 40% 35%;
+    --mystic: 290 45% 28%;
 
-    --sidebar-background: 24 28% 7%;
-    --sidebar-foreground: 38 35% 92%;
-    --sidebar-primary: 34 80% 55%;
-    --sidebar-primary-foreground: 22 30% 8%;
-    --sidebar-accent: 20 22% 16%;
-    --sidebar-accent-foreground: 38 35% 92%;
-    --sidebar-border: 22 20% 18%;
-    --sidebar-ring: 34 80% 55%;
+    --sidebar-background: 270 25% 6%;
+    --sidebar-foreground: 38 30% 92%;
+    --sidebar-primary: 38 78% 56%;
+    --sidebar-primary-foreground: 270 30% 8%;
+    --sidebar-accent: 268 22% 15%;
+    --sidebar-accent-foreground: 38 30% 92%;
+    --sidebar-border: 268 18% 17%;
+    --sidebar-ring: 38 78% 56%;
   }
 }
 
@@ -77,17 +77,17 @@
     background:
       radial-gradient(
         ellipse 80% 50% at 50% -10%,
-        hsl(30 60% 22% / 0.7),
+        hsl(310 45% 20% / 0.7),
         transparent
       ),
       radial-gradient(
         ellipse 60% 50% at 85% 40%,
-        hsl(20 55% 25% / 0.4),
+        hsl(290 40% 22% / 0.45),
         transparent
       ),
       radial-gradient(
         ellipse 60% 50% at 10% 85%,
-        hsl(36 50% 20% / 0.35),
+        hsl(38 40% 18% / 0.4),
         transparent
       ),
       hsl(var(--background));
