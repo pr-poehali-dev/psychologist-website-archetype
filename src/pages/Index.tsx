@@ -355,9 +355,9 @@ export default function Index() {
             </p>
             <div className="space-y-4">
               {[
-                { icon: 'Mail', text: 'hello@kostyurina.ru' },
-                { icon: 'Phone', text: '+7 (900) 123-45-67' },
-                { icon: 'Send', text: '@kostyurina_psy' },
+                { icon: 'Mail', text: '89651867741@yandex.ru' },
+                { icon: 'Phone', text: '+7 (965) 186-77-41' },
+                { icon: 'MapPin', text: 'д. Глухово, Романовская 15, 10 подъезд' },
               ].map((c) => (
                 <div key={c.text} className="flex items-center gap-3 text-muted-foreground">
                   <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
