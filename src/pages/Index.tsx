@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/933a7f48-4517-484e-b579-48cc6dc2c64d/files/9afcddcc-9c7e-49cc-a29a-1da86d477880.jpg';
+const HERO_IMG = 'https://cdn.poehali.dev/projects/933a7f48-4517-484e-b579-48cc6dc2c64d/files/65472727-4409-4be2-a0ea-36eff714b1f3.jpg';
 
 const archetypes = [
   {
@@ -128,10 +128,9 @@ export default function Index() {
             </div>
           </div>
           <div className="relative reveal" style={{ animationDelay: '0.3s' }}>
-            <div className="absolute -inset-6 rounded-full bg-mystic/20 blur-3xl" />
-            <div className="relative animate-float">
-              <div className="absolute inset-0 rounded-[2rem] border border-gold/30 animate-spin-slow" style={{ borderStyle: 'dashed' }} />
-              <img src={HERO_IMG} alt="Мария Светлова" className="relative rounded-[2rem] w-full object-cover aspect-[4/5] gold-glow" />
+            <div className="absolute -inset-4 rounded-[2.5rem] bg-secondary/30 blur-2xl" />
+            <div className="relative">
+              <img src={HERO_IMG} alt="Мария Светлова" className="relative rounded-[2rem] w-full object-cover aspect-[4/5] border border-gold/20" />
             </div>
           </div>
         </div>
