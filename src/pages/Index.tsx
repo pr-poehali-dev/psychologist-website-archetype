@@ -127,9 +127,13 @@ export default function Index() {
               <span className="w-8 h-px bg-gold" /> Тело · Разум · Душа
             </span>
             <h1 className="font-display text-5xl md:text-6xl leading-[1.05] mb-5">
-              Со мной ты почувствуешь себя <span className="gold-gradient italic">живой и свободной</span>
+              Путь к себе <br />
+              <span className="gold-gradient italic">через глубину</span>
             </h1>
-            <p className="text-muted-foreground text-lg max-w-md mb-9">
+            <p className="text-muted-foreground text-lg max-w-md mb-3">
+              Со мной ты почувствуешь себя <span className="text-foreground font-medium">живой и свободной.</span>
+            </p>
+            <p className="text-muted-foreground text-base max-w-md mb-9">
               Психотерапия через тело. Работаю с тем, что застряло глубже слов — в напряжении, дыхании и ощущениях.
             </p>
             <div className="flex flex-wrap gap-4">
