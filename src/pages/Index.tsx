@@ -11,36 +11,37 @@ const CERTS = [
   { title: 'Сертификат 4', src: HERO_IMG },
 ];
 
-const archetypes = [
-  { icon: 'Sparkles', name: 'Маг', word: 'Трансформация', text: 'Превращаем боль в ресурс. Меняем внутреннюю реальность, чтобы изменилась внешняя.' },
-  { icon: 'BookOpen', name: 'Мудрец', word: 'Осознанность', text: 'Ищем истину под слоями привычек и страхов. Понимание как ключ к свободе.' },
-  { icon: 'Compass', name: 'Искатель', word: 'Путь', text: 'Сопровождаю вас в путешествии к подлинному «я» — за пределы навязанных ролей.' },
+const pillars = [
+  { icon: 'Activity', name: 'Тело', word: 'Ощущения', text: 'Тело хранит всё, что не смогла вместить психика. Работаем через телесный опыт — напряжение, дыхание, движение.' },
+  { icon: 'Brain', name: 'Разум', word: 'Осознанность', text: 'Ищем истину под слоями привычек и страхов. Понимание как ключ к свободе.' },
+  { icon: 'Heart', name: 'Душа', word: 'Целостность', text: 'Соединяем разрозненные части себя. Путь к подлинному «я» — туда, где живёт свобода.' },
 ];
 
 const services = [
-  { icon: 'User', title: 'Индивидуальная терапия', desc: 'Глубинная работа один на один. Тревога, кризисы, поиск смысла.', price: 'от 5 000 ₽' },
-  { icon: 'Moon', title: 'Работа с архетипами', desc: 'Юнгианский подход: исследуем внутренние фигуры вашей психики.', price: 'от 6 000 ₽' },
-  { icon: 'Heart', title: 'Терапия отношений', desc: 'Возвращаем близость, учимся слышать себя и партнёра.', price: 'от 7 000 ₽' },
-  { icon: 'Video', title: 'Онлайн-консультации', desc: 'Сессии из любой точки мира в защищённом пространстве.', price: 'от 5 000 ₽' },
+  { icon: 'User', title: 'Индивидуальная терапия', desc: 'Глубинная работа один на один. Тревога, кризисы, поиск смысла и опоры.', price: 'от 5 000 ₽' },
+  { icon: 'Wind', title: 'Телесно-ориентированная терапия', desc: 'Подход Вильгельма Райха: работаем с мышечными зажимами, дыханием и хроническим напряжением — там, где застревает боль.', price: 'от 6 000 ₽' },
+  { icon: 'Layers', title: 'Сессия с МАК картами', desc: 'Метафорические карты помогают обойти сопротивление разума и добраться до глубинных образов и ресурсов.', price: '3 500 ₽' },
+  { icon: 'Video', title: 'Онлайн-консультации', desc: 'Сессии из любой точки мира в защищённом пространстве.', price: 'от 3 500 ₽' },
+  { icon: 'Dice5', title: 'Трансформационные игры', desc: 'Групповой или индивидуальный формат: через игру — к новым смыслам, сценариям и точкам роста.', price: '2 500 ₽' },
 ];
 
 const approach = [
   { num: '01', title: 'Встреча', text: 'Знакомимся, исследуем запрос, создаём безопасное пространство доверия.' },
-  { num: '02', title: 'Погружение', text: 'Спускаемся к корням. Распознаём паттерны, теневые стороны, ресурсы.' },
+  { num: '02', title: 'Погружение', text: 'Спускаемся к корням через тело и образы. Распознаём паттерны и зажимы.' },
   { num: '03', title: 'Трансформация', text: 'Интегрируем новое понимание. Меняем способ быть в мире.' },
-  { num: '04', title: 'Путь', text: 'Вы обретаете внутренний компас и идёте дальше самостоятельно.' },
+  { num: '04', title: 'Свобода', text: 'Вы обретаете контакт с собой и идёте дальше — живой и свободной.' },
 ];
 
 const posts = [
-  { tag: 'Архетипы', title: 'Тень как источник силы', date: '12 июня', read: '7 мин' },
-  { tag: 'Практика', title: 'Зачем нам внутренний Мудрец', date: '4 июня', read: '5 мин' },
-  { tag: 'Размышления', title: 'Искатель: жизнь как путешествие', date: '28 мая', read: '9 мин' },
+  { tag: 'Тело', title: 'Почему тело помнит то, что забыл разум', date: '12 июня', read: '7 мин' },
+  { tag: 'Практика', title: 'Дыхание как путь к себе', date: '4 июня', read: '5 мин' },
+  { tag: 'Размышления', title: 'Что такое телесная свобода', date: '28 мая', read: '9 мин' },
 ];
 
 const reviews = [
   { name: 'Анна К.', text: 'Анна помогла мне найти то, что я искала годами. Это не терапия — это возвращение к себе.', role: 'Год в терапии' },
   { name: 'Дмитрий В.', text: 'Глубоко, бережно и при этом честно. Впервые перестал бояться смотреть внутрь себя.', role: '6 месяцев' },
-  { name: 'Елена С.', text: 'Работа с архетипами раскрыла меня с неожиданной стороны. Чувствую себя цельной.', role: '8 месяцев' },
+  { name: 'Елена С.', text: 'После работы с телом я почувствовала себя живой — это невозможно объяснить словами.', role: '8 месяцев' },
 ];
 
 const navLinks = [
@@ -97,58 +98,57 @@ export default function Index() {
         )}
       </header>
 
-      {/* HERO */}
+      {/* HERO — фото слева, текст справа */}
       <section id="hero" className="relative star-field overflow-hidden pt-32 pb-24 md:pt-44 md:pb-32">
         <div className="container grid md:grid-cols-2 gap-12 items-center relative z-10">
-          <div className="reveal" style={{ animationDelay: '0.1s' }}>
-            <span className="inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-gold mb-6">
-              <span className="w-8 h-px bg-gold" /> Маг · Мудрец · Искатель
-            </span>
-            <h1 className="font-display text-5xl md:text-7xl leading-[1.05] mb-6">
-              Путь к себе <br />
-              <span className="gold-gradient italic">через глубину</span>
-            </h1>
-            <p className="text-muted-foreground text-lg max-w-md mb-9">
-              Психотерапия как алхимия души. Превращаю внутренний хаос в источник силы, мудрости и свободы.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button onClick={() => scrollTo('contacts')} className="bg-primary text-primary-foreground hover:opacity-90 rounded-full px-7 h-12 text-base gold-glow">
-                Начать путь
-              </Button>
-              <Button onClick={() => scrollTo('approach')} variant="outline" className="border-gold/40 text-foreground hover:bg-secondary rounded-full px-7 h-12 text-base">
-                Мой подход
-              </Button>
-            </div>
-          </div>
-          <div className="relative reveal" style={{ animationDelay: '0.3s' }}>
+
+          {/* Фото слева */}
+          <div className="relative reveal order-1" style={{ animationDelay: '0.1s' }}>
             <div className="absolute -inset-4 rounded-[2.5rem] bg-primary/10 blur-3xl" />
             <div className="relative">
               <img
                 src={HERO_IMG}
                 alt="Анна Костюрина"
                 className="relative rounded-[2rem] w-full object-cover object-top aspect-[4/5] border border-gold/25"
-                style={{ objectPosition: 'center top' }}
               />
               <div className="absolute bottom-4 left-4 right-4 glass rounded-xl px-5 py-3 flex items-center justify-between">
                 <div>
                   <div className="font-display text-xl">Анна Костюрина</div>
-                  <div className="text-xs text-muted-foreground">Психолог · Архетипный подход</div>
+                  <div className="text-xs text-muted-foreground">Психолог · Телесно-ориентированный подход</div>
                 </div>
                 <Icon name="Award" className="text-gold" size={24} />
               </div>
             </div>
           </div>
+
+          {/* Текст справа */}
+          <div className="reveal order-2" style={{ animationDelay: '0.25s' }}>
+            <span className="inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-gold mb-6">
+              <span className="w-8 h-px bg-gold" /> Тело · Разум · Душа
+            </span>
+            <h1 className="font-display text-5xl md:text-6xl leading-[1.05] mb-5">
+              Со мной ты почувствуешь себя <span className="gold-gradient italic">живой и свободной</span>
+            </h1>
+            <p className="text-muted-foreground text-lg max-w-md mb-9">
+              Психотерапия через тело. Работаю с тем, что застряло глубже слов — в напряжении, дыхании и ощущениях.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Button onClick={() => scrollTo('contacts')} className="bg-primary text-primary-foreground hover:opacity-90 rounded-full px-7 h-12 text-base gold-glow">
+                Записаться
+              </Button>
+              <Button onClick={() => scrollTo('approach')} variant="outline" className="border-gold/40 text-foreground hover:bg-secondary rounded-full px-7 h-12 text-base">
+                Мой подход
+              </Button>
+            </div>
+          </div>
+
         </div>
       </section>
 
-      {/* ARCHETYPES */}
+      {/* PILLARS + ABOUT */}
       <section id="about" className="container py-20 md:py-28">
-        <div className="text-center mb-14 reveal">
-          <p className="text-gold text-sm tracking-[0.3em] uppercase mb-3">Три архетипа</p>
-          <h2 className="font-display text-4xl md:text-5xl">Энергии, в которых я работаю</h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {archetypes.map((a, i) => (
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {pillars.map((a, i) => (
             <div key={a.name} className="glass rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 reveal" style={{ animationDelay: `${0.1 * i}s` }}>
               <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center mb-6 animate-glow-pulse">
                 <Icon name={a.icon} className="text-gold" size={26} />
@@ -160,20 +160,20 @@ export default function Index() {
           ))}
         </div>
 
-        <div className="glass rounded-3xl mt-12 p-8 md:p-12 grid md:grid-cols-[1.5fr_1fr] gap-8 items-center reveal">
+        <div className="glass rounded-3xl p-8 md:p-12 grid md:grid-cols-[1.5fr_1fr] gap-8 items-center reveal">
           <div>
             <h3 className="font-display text-3xl md:text-4xl mb-4">Обо мне</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Я — практикующий психолог с 12-летним опытом. Работаю в юнгианском и экзистенциальном подходе,
-              помогая людям пройти путь от внутреннего разлада к целостности.
+              Я — дипломированный психолог. Работаю в телесно-ориентированном процессуальном подходе,
+              помогая пройти путь от внутреннего разлада к целостности и свободе.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Верю, что в каждом из нас живёт Маг, способный к трансформации, Мудрец, знающий ответы,
-              и Искатель, готовый идти. Моя задача — помочь вам услышать их голоса.
+              Верю, что тело — это не просто сосуд для мыслей, а мудрейший проводник к себе.
+              В нём хранятся ответы, которые разум ещё не нашёл.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            {[['12+', 'лет практики'], ['600+', 'клиентов'], ['3', 'метода терапии'], ['∞', 'возможностей']].map(([n, l]) => (
+            {[['6+', 'лет практики'], ['300+', 'клиентов'], ['5', 'методов работы'], ['∞', 'возможностей']].map(([n, l]) => (
               <div key={l} className="text-center bg-secondary/50 rounded-2xl py-6">
                 <div className="font-display text-4xl gold-gradient">{n}</div>
                 <div className="text-xs text-muted-foreground mt-1">{l}</div>
@@ -212,7 +212,7 @@ export default function Index() {
           </div>
           <p className="text-xs text-muted-foreground mt-4 flex items-center gap-2">
             <Icon name="Info" size={14} />
-            Загрузите реальные фото сертификатов — напишите мне, и я обновлю галерею
+            Прикрепите фото сертификатов — и я обновлю галерею
           </p>
         </div>
       </section>
@@ -238,12 +238,12 @@ export default function Index() {
         </div>
         <div className="grid sm:grid-cols-2 gap-6">
           {services.map((s, i) => (
-            <div key={s.title} className="glass rounded-2xl p-7 flex gap-5 transition-all duration-500 hover:-translate-y-1 reveal" style={{ animationDelay: `${0.08 * i}s` }}>
+            <div key={s.title} className={`glass rounded-2xl p-7 flex gap-5 transition-all duration-500 hover:-translate-y-1 reveal ${i === 4 ? 'sm:col-span-2 md:col-span-1' : ''}`} style={{ animationDelay: `${0.08 * i}s` }}>
               <div className="shrink-0 w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
                 <Icon name={s.icon} className="text-gold" size={24} />
               </div>
               <div>
-                <div className="flex items-center justify-between gap-3 mb-2">
+                <div className="flex items-center justify-between gap-3 mb-2 flex-wrap">
                   <h3 className="font-display text-2xl">{s.title}</h3>
                   <span className="text-gold text-sm whitespace-nowrap">{s.price}</span>
                 </div>
@@ -382,7 +382,7 @@ export default function Index() {
             <Icon name="Sparkle" className="text-gold" size={18} />
             <span className="font-display text-lg">Анна Костюрина</span>
           </div>
-          <p>© 2026 · Психолог · Маг · Мудрец · Искатель</p>
+          <p>© 2026 · Психолог · Тело · Разум · Душа</p>
         </div>
       </footer>
     </div>
